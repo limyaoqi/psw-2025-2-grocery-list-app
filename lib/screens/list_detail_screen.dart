@@ -576,20 +576,31 @@ class _ListDetailScreenState extends State<ListDetailScreen> {
                                   Icon(
                                     Icons.shopping_cart_outlined,
                                     size: 80,
-                                    color: Theme.of(context).colorScheme.outline,
+                                    color:
+                                        Theme.of(context).colorScheme.outline,
                                   ),
                                   const SizedBox(height: 16),
                                   Text(
                                     'No items yet',
-                                    style: Theme.of(context).textTheme.headlineSmall?.copyWith(
-                                      color: Theme.of(context).colorScheme.onSurfaceVariant,
+                                    style: Theme.of(
+                                      context,
+                                    ).textTheme.headlineSmall?.copyWith(
+                                      color:
+                                          Theme.of(
+                                            context,
+                                          ).colorScheme.onSurfaceVariant,
                                     ),
                                   ),
                                   const SizedBox(height: 8),
                                   Text(
                                     'Add your first item using the form above',
-                                    style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                                      color: Theme.of(context).colorScheme.onSurfaceVariant,
+                                    style: Theme.of(
+                                      context,
+                                    ).textTheme.bodyMedium?.copyWith(
+                                      color:
+                                          Theme.of(
+                                            context,
+                                          ).colorScheme.onSurfaceVariant,
                                     ),
                                     textAlign: TextAlign.center,
                                   ),
@@ -603,7 +614,7 @@ class _ListDetailScreenState extends State<ListDetailScreen> {
                         if (filtered.isEmpty) {
                           String emptyMessage;
                           IconData emptyIcon;
-                          
+
                           switch (_filterMode) {
                             case _FilterMode.incomplete:
                               emptyMessage = 'All items are completed!';
@@ -614,10 +625,11 @@ class _ListDetailScreenState extends State<ListDetailScreen> {
                               emptyIcon = Icons.radio_button_unchecked;
                               break;
                             default:
-                              emptyMessage = 'No items match your current filter';
+                              emptyMessage =
+                                  'No items match your current filter';
                               emptyIcon = Icons.filter_list_off;
                           }
-                          
+
                           return Center(
                             child: Padding(
                               padding: const EdgeInsets.all(32.0),
@@ -627,13 +639,19 @@ class _ListDetailScreenState extends State<ListDetailScreen> {
                                   Icon(
                                     emptyIcon,
                                     size: 64,
-                                    color: Theme.of(context).colorScheme.outline,
+                                    color:
+                                        Theme.of(context).colorScheme.outline,
                                   ),
                                   const SizedBox(height: 16),
                                   Text(
                                     emptyMessage,
-                                    style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                                      color: Theme.of(context).colorScheme.onSurfaceVariant,
+                                    style: Theme.of(
+                                      context,
+                                    ).textTheme.titleMedium?.copyWith(
+                                      color:
+                                          Theme.of(
+                                            context,
+                                          ).colorScheme.onSurfaceVariant,
                                     ),
                                     textAlign: TextAlign.center,
                                   ),
