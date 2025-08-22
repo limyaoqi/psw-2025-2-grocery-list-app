@@ -42,9 +42,9 @@ A modern Flutter application for managing grocery shopping lists with intuitive 
 
 ## 📱 Screenshots
 
-| Home Screen                   | List Detail                   | Add Item                         | Empty State                           |
+| Home Screen                   | List Detail                   | Add Item                         | Filter Item                           |
 | ----------------------------- | ----------------------------- | -------------------------------- | ------------------------------------- |
-| ![Home](screenshots/home.png) | ![List](screenshots/list.png) | ![Add](screenshots/add_item.png) | ![Empty](screenshots/empty_state.png) |
+| ![Home](screenshots/home.png) | ![List](screenshots/list.png) | ![Add](screenshots/add_item.png) | ![Empty](screenshots/filter.png) |
 
 ## 🏗️ Architecture
 
